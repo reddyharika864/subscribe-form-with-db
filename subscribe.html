@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>subscribe form</title>
+    <style>
+body{
+   background-image: url("img3.jpg");
+   font-size: 110%;
+   background-repeat: repeat;
+}
+button{
+    background-color: greenyellow;
+}
+h1{
+color: blue;
+}
+div{
+
+    background-color: palevioletred;
+   height: 55px;
+   text-align: center;
+    font-style: italic;
+    font-size: 1cm;
+    color: whitesmoke;
+}
+table{
+    border: 0.1cm solid black;
+    height: 8cm;
+    width: 10cm;
+    cursor: pointer;
+    color: blue;
+}
+table:hover{
+    transform: scale(1.2);
+    background-color: lightsteelblue;
+
+}
+    </style>
+</head>
+<body align="center">
+    <form action="connect.php" method="post">
+        <p style="font-size: 0.7cm; color:blue">Welcome to Newsletter !!!</p>
+         <div>SUBSCRIPTION</div>
+        <br><br><br>
+       <table align="center">
+         <td> 
+                <label >Username:</label><br>
+                <input id="name" type="text" placeholder="Enter your name" name="username" required><br><br>
+                <label >Email:</label><br>
+                <input id="email" placeholder="Enter your email id" name="email" type="text"><br><br>
+                <label>image upload:</label><br>
+                <input type="file" name="file" id="file"><br><br>
+                <a href="">forgot password</a><br><br>
+                <input type="submit" value="Subscribe" name="submit" id="subuser">
+           </td>
+        
+       </table>
+   </form>
+</body>
+</html>
